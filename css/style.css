@@ -1175,3 +1175,10 @@ body.lock {
   background-color: #ff8b38;
   transform: scale(1);
 }
+
+@media (hover: none) {
+  /* Styles for devices with touch screens */
+  .tabs__tile.active {
+    transform: scale(0.9);
+  }
+}

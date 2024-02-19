@@ -1,5 +1,5 @@
-@import url("reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap");
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -7,7 +7,7 @@ html {
 
 body {
   list-style: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #86878b;
   line-height: normal;
@@ -43,7 +43,7 @@ body.lock {
 
 .title-big {
   color: #212121;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 36px;
   line-height: 43px;
   text-align: center;
@@ -170,7 +170,7 @@ body.lock {
     li {
       position: relative;
       &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: 20px;
@@ -190,7 +190,7 @@ body.lock {
   &__link {
     opacity: 0.69;
     color: #ffffff;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition-duration: 0.2s;
     &:active {
       opacity: 0.4;
@@ -243,7 +243,7 @@ body.lock {
 
   .header__menu-icon::before,
   .header__menu-icon::after {
-    content: "";
+    content: '';
   }
 
   .header__menu-icon::before {
@@ -278,7 +278,7 @@ body.lock {
   }
 
   .header__menu-body::before {
-    content: "";
+    content: '';
     position: fixed;
     width: 100%;
     top: 0;
@@ -337,7 +337,7 @@ body.lock {
   }
   &__title {
     color: #ffffff;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
     text-transform: uppercase;
   }
@@ -349,7 +349,7 @@ body.lock {
   }
   &__text {
     color: #ffffffb7;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 23px;
@@ -655,8 +655,8 @@ body.lock {
     display: grid;
     grid-template: auto / 40px 1fr;
     grid-template-areas:
-      "icon title"
-      "icon text";
+      'icon title'
+      'icon text';
     column-gap: 30px;
   }
   &__icon {
@@ -816,7 +816,7 @@ body.lock {
     background-color: #333333;
     height: 100px;
     color: #ffffff;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 94px;
     font-weight: 700;
   }
@@ -902,7 +902,7 @@ body.lock {
 
   &__quote {
     font-style: italic;
-    background: url("../img/image_quotes_background.png") no-repeat 0 0;
+    background: url('../img/image_quotes_background.png') no-repeat 0 0;
     padding: 20px 10px;
     padding-bottom: 30px;
   }
@@ -911,8 +911,8 @@ body.lock {
     display: grid;
     grid-template: auto / 70px 1fr;
     grid-template-areas:
-      "avatar name"
-      "avatar job";
+      'avatar name'
+      'avatar job';
     column-gap: 15px;
   }
 
@@ -1005,10 +1005,10 @@ body.lock {
 .form-contact-us {
   display: grid;
   grid-template-areas:
-    "name message-label"
-    "email message"
-    "subject message"
-    "button button";
+    'name message-label'
+    'email message'
+    'subject message'
+    'button button';
   width: 100%;
   row-gap: 20px;
   column-gap: 60px;
@@ -1016,12 +1016,12 @@ body.lock {
   padding-bottom: 80px;
   @media (max-width: 620px) {
     grid-template-areas:
-      "name"
-      "email"
-      "subject"
-      "message-label"
-      "message"
-      "button";
+      'name'
+      'email'
+      'subject'
+      'message-label'
+      'message'
+      'button';
     row-gap: 10px;
   }
 }
@@ -1231,4 +1231,11 @@ body.lock {
 .tabs__tile.active {
   background-color: #ff8b38;
   transform: scale(1);
+}
+
+@media (hover: none) {
+  /* Styles for devices with touch screens */
+  .tabs__tile.active {
+    transform: scale(0.9);
+  }
 }
